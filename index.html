@@ -1,29 +1,429 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Envía Ya - Agencia de Envíos</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Envía Ya</h1>
-        <p>Tu solución confiable para envíos rápidos y seguros</p>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Web Design Mastery | Envía ya2</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__bar">
+        <a href="#"><img src="assets/logo.png" alt="Envía ya" style="max-width: 100px; height: auto; margin: -20%; border-radius: 15px;"></a>
+        <ul class="nav__links">
+          <li class="link"><a href="#inicio">INICIO</a></li>
+          <li class="link"><a href="#nosotros">NOSOTROS</a></li>
+          <li class="link"><a href="#funcionalidades">FUNCIONALIDADES</a></li>
+          <li class="link"><a href="#contacto">CONTACTO</a></li>
+        </ul>
+        <div class="nav__btns">
+          <button class="btn btn__primary">Iniciar sesión</button>
+          <button class="btn btn__secondary">Regístrate</button>
+        </div>
+      </div>
+    </nav>
+<hr/>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__content">
+          <h1>Creada para ayudarte a escoger la más confiable y eficiente agencia de envíos</h1>
+          <p style="font-size: 16px;">
+            Descubre y entérate de las experiencias de otros usuarios, sobre
+            las agencias de envíos en Lima, con destino a dinstintos departamentos 
+            del Perú. Esta información valiosa te ayudará a tomar la mejor decisión
+            para realizar tus envíos de manera rápida y segura. 
+          </p>
+          
+
+          <p style="font-size: 16px;">
+            Si quieres buscar alguna agencia de envíos más cercana, haz clic en el siguiente 
+            botón azul.  
+          </p>
+
+          
+
+          <div class="header__btns">  
+            <button class="btn btn__secondary">Quiero buscar agencias de envío</button>
+          <a href="assets/infografía.pdf" download="masinformacion.pdf">
+            <button class="btn btn__primary">Más información</button>
+          </a>
+          </div>
+
+          <br/>
+          
+
+          <div style="display: flex; justify-content: center; align-items: center;">
+            <iframe src="https://giphy.com/embed/d7MfipCF6linpvvueo" width="240" height="240" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+          </div>
+          <p><a href="https://giphy.com/gifs/holascharff-box-caja-scharff-d7MfipCF6linpvvueo">via GIPHY</a></p>
+          
+        </div>
+        <div class="header__image">
+          <img src="assets/header.jpg" alt="header" style="max-width: 700px; height: auto;"/>
+        </div>
+      </div>
     </header>
 
-    <section class="features">
-        <div class="feature">
-            <h2>Rastreo en tiempo real</h2>
-            <p>Sigue tus paquetes desde cualquier dispositivo.</p>
+    <section class="section__container nosotros__container" id="nosotros">
+      <div class="nosotros__image">
+        <img src="assets/nosotros.jpg" alt="nosotros" />
+      </div>
+      <div class="nosotros__content">
+        <h3>Sobre nosotros</h3>
+        <h2 class="section__header">
+          Somos los pioneros en centralizar y ordenar a las agencias de envíos
+          para que tomes la mejor elección.
+        </h2>
+        <p style="font-size: 16px;" class="section__subheader">
+            Ya sea que esté realizando su primer envío, o sea una empresa que
+            realice muchos envíos, o simplemente esté buscando un cambio,
+            estamos aquí para guiarlo en cada paso del camino. Nuestra misión
+            es hacer que su experiencia de búsqueda sea fluida y exitosa. 
+        </p>
+        <div class="nosotros__grid">
+          <div class="nosotros__card">
+            <h4>Destinos</h4>
+            <p>60+</p>
+          </div>
+          <div class="nosotros__card">
+            <h4>Empresas</h4>
+            <p>12</p>
+          </div>
         </div>
-        <!-- Agrega más secciones con características aquí -->
+      </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Envía Ya. Todos los derechos reservados.</p>
+    <section class="project__container" id="funcionalidades">
+      <div class="project__header">
+        <div>
+          <h2 class="section__header">Funcionalidades del proyecto</h2>
+          <p style="font-size: 16px;" class="section__subheader">
+            El propósito de nuestro proyecto es centralizar la información de las agencias de envíos 
+            de Lima, hacia otros departamentos del Perú. Adicionalmente queremos mostrar los comentarios
+            de las experiencias de servicios de los clientes para que los futuros usuarios puedan escoger 
+            la que más le convenga. Nos parece muy importante nuestro proyecto ya que soluciona un problema
+            concurrente que es la pérdida de tiempo en la búsqueda de agencias confiables y eficientes.
+          </p>  
+          <br> 
+          
+        <h3 style="font-size: 20px;">Lista de funcionalidades:</h3>   
+        </div>
+        </div>
+      </div>
+      <!-- Contenedor principal deslizante -->
+      <div class="swiper">
+        <!--Envoltorio adicional requerido -->
+        <div class="swiper-wrapper">
+          <!--cDiapositivas -->
+          <div class="swiper-slide">
+            <div class="project__card">
+              <img src="assets/filtrosdestino.JPG" alt="project" />
+
+              <div style="display: flex; justify-content: center; align-items: center;">
+                <iframe src="https://giphy.com/embed/HPzNBFdTh8sxhqNdpX" width="50" height="50" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+              </div>
+              <p><a href="https://giphy.com/gifs/pryzmegypt-HPzNBFdTh8sxhqNdpX">via GIPHY</a></p>
+              
+
+              <div class="project__content">
+                <div class="project__details">
+                  <h4>Filtros de búsqueda de agencias</h4>
+                  <p>
+                    <span><i></i></span>
+                    Con esta funcionalidad podrás filtrar las agencias de envíos
+                    más cercanas, hacia el lugar a donde deseas enviar. 
+              </div>
+            </div>
+          </div>
+          <br/>
+          <br/>
+          <br/>
+          <div class="swiper-slide">
+            <div class="project__card">
+              <img src="assets/login.JPG" alt="project" />
+
+              <div style="display: flex; justify-content: center; align-items: center;">
+                <iframe src="https://giphy.com/embed/HPzNBFdTh8sxhqNdpX" width="50" height="50" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+              </div>
+              <p><a href="https://giphy.com/gifs/pryzmegypt-HPzNBFdTh8sxhqNdpX">via GIPHY</a></p>
+
+              <div class="project__content">
+                <div class="project__details">
+                  
+                  <h4>Login</h4>
+                  <p>
+                    <span><i></i></span>
+                    En la funcionalidad login, podrás loguearte, y de esta manera
+                    tener acceso a más funcionalidades como poder comentar, poder valorar
+                    a las empresas, tener un historial de búsqueda. 
+                  </p>
+                </div>
+                <div class="project__ratings">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br/>
+          <br/>
+          <br/>
+
+          <div class="swiper-slide">
+            <div class="project__card">
+              <img src="assets/agenciaslima.JPG" alt="project" />
+
+              <div style="display: flex; justify-content: center; align-items: center;">
+                <iframe src="https://giphy.com/embed/HPzNBFdTh8sxhqNdpX" width="50" height="50" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+              </div>
+              <p><a href="https://giphy.com/gifs/pryzmegypt-HPzNBFdTh8sxhqNdpX">via GIPHY</a></p>
+
+              <div class="project__content">
+                <div class="project__details">
+                  <h4>Relación de agencias</h4>
+                  <p>
+                    <span><i></i></span>
+                    Una vez filtrados los datos requeridos, podrás ver la lista de 
+                    todas las agencias de envíos, sus datos, su foto, sus valoraciones, 
+                    comentarios, para que puedas escoger la que más te convenga. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+
+
+          <div class="swiper-slide">
+            <div class="project__card">
+              <img src="assets/comentarios.JPG" alt="project" />
+
+              <div style="display: flex; justify-content: center; align-items: center;">
+                <iframe src="https://giphy.com/embed/HPzNBFdTh8sxhqNdpX" width="50" height="50" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+              </div>
+              <p><a href="https://giphy.com/gifs/pryzmegypt-HPzNBFdTh8sxhqNdpX">via GIPHY</a></p>
+
+              <div class="project__content">
+                <div class="project__details">
+                  <h4>Comentarios</h4>
+                  <p>
+                    <span><i></i></span>
+                    En comentarios podrás ver las experiencias de servicios
+                    de los usuarios. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+
+          <div class="swiper-slide">
+            <div class="project__card">
+              <img src="assets/dardebaja.JPG" alt="project" />
+
+              <div style="display: flex; justify-content: center; align-items: center;">
+                <iframe src="https://giphy.com/embed/HPzNBFdTh8sxhqNdpX" width="50" height="50" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+              </div>
+              <p><a href="https://giphy.com/gifs/pryzmegypt-HPzNBFdTh8sxhqNdpX">via GIPHY</a></p>
+
+              <div class="project__content">
+                <div class="project__details">
+                  <h4>Elimina tu cuenta</h4>
+                  <p>
+                    <span><i></i></span>
+                    Puedes eliminar tu cuenta en el momento que quieras
+                  </p>
+              </div>
+            </div>
+          </div>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+
+          <div class="swiper-slide">
+            <div class="project__card">
+              <img src="assets/detalleempresas.JPG" alt="project" />
+
+              <div style="display: flex; justify-content: center; align-items: center;">
+                <iframe src="https://giphy.com/embed/HPzNBFdTh8sxhqNdpX" width="50" height="50" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+              </div>
+              <p><a href="https://giphy.com/gifs/pryzmegypt-HPzNBFdTh8sxhqNdpX">via GIPHY</a></p>
+
+              <div class="project__content">
+                <div class="project__details">
+                  <h4>Datos de agencias</h4>
+                  <p>
+                    <span><i></i></span>
+                    En esta funcionalidad podrás encontrar toda la información de las empresas
+                    registradas en nuestra web. 
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div>
+      <p style="font-size: 16px; text-align: center;" class="section__subheader">
+      ¿Te parecieron interesantes todos los beneficios de nuestro proyecto? Echa un vistazo a 
+      las agencias de envío más cercanas a ti en el siguiente botón: 
+      </p>
+    </div>
+    <br/>
+    <br/>
+
+
+    <div style="display: flex; justify-content: center;" class="header__btns">
+      <button class="btn btn__secondary">Quiero buscar agencias de envio</button>
+      
+    </div>
+    <section>
+        <div class="conteiner" id="contacto">
+            <h1 class="heading">Contacto</h1>
+            <style>
+                h1 {
+                    text-align: center;
+                }
+            </style>
+            <h1 style="color: black;">
+                Gracias por tu visita. Este proyecto fue conformado por cuatro personas apasionadas por 
+                la tecnología y la programación.
+                ¿Tienes alguna consulta, buscas colaboraciones, o simplemente deseas contactarnos? 
+                No dudes en enviarnos un mensaje. 
+            </h1>
+            <div class="card-wrapper">
+                <div class="card">
+                    <img src="assets/software.jpg" alt="card background" class="card-img">
+                    <img src="assets/maly.jpeg" alt="profile-image" class="profile-img">
+                    <h1>Maly Medina</h1>
+                    <p style="font-size: 13px" class="job-title">Project Manager</p>
+                    <p style="font-size: 13px">
+                    <a href="https://www.linkedin.com/in/malyjmedina/" target="_blank" style="color: rgb(55, 24, 139);">Linkedin</a>
+                    </p>
+                    <p style="font-size: 13px">
+                      <a href="https://github.com/jhamilamedina" target="_blank" style="color: rgb(55, 24, 139);">GitHub</a>
+                    </p>
+                    <a href="https://wa.link/ji6ah4" class="btn">Conversemos</a>
+                    
+                </div>
+
+                <div class="card">
+                    <img src="assets/software.jpg" alt="card background" class="card-img">
+                    <img src="assets/eduar.jpeg" alt="profile-image" class="profile-img">
+                    <h1>Eduar Vallejos</h1>
+                    <p style="font-size: 13px" class="job-title">Back End Developer</p>
+                    <p style="font-size: 13px">
+                      <a href="https://www.linkedin.com/in/eduar-vallejos-chumbe/" target="_blank" style="color: rgb(55, 24, 139);">Linkedin</a>
+                      </p>
+                      <p style="font-size: 13px">
+                        <a href="https://github.com/Eduarvallejos" target="_blank" style="color: rgb(55, 24, 139);">GitHub</a>
+                      </p>
+                    <a href="https://wa.link/ngab8c" class="btn">Conversemos</a>
+                    
+                </div>
+
+                <div class="card">
+                    <img src="assets/software.jpg" alt="card background" class="card-img">
+                    <img src="assets/misael.jpg" alt="profile-image" class="profile-img">
+                    <h1>Misael Bazan</h1>
+                    <p style="font-size: 13px" class="job-title">Front End Developer</p>
+                    <p style="font-size: 13px">
+                      <a href="https://www.linkedin.com/in/misael-baz%C3%A1n-franco-95805b25a?originalSubdomain=pe" target="_blank" style="color: rgb(55, 24, 139);">Linkedin</a>
+                      </p>
+                      <p style="font-size: 13px">
+                        <a href="https://github.com/misaelbazan" target="_blank" style="color: rgb(55, 24, 139);">GitHub</a>
+                      </p>
+                    </p>
+                    <a href="https://wa.link/08hhjy" class="btn">Conversemos</a>
+                    
+                </div>
+
+                <div class="card">
+                    <img src="assets/software.jpg" alt="card background" class="card-img">
+                    <img src="assets/georgia.jpeg" alt="profile-image" class="profile-img">
+                    <h1>Georgia Silva</h1>
+                    <p style="font-size: 13px" class="job-title">Database Developer</p>
+                    <p style="font-size: 13px">
+                      <a href="https://www.linkedin.com/in/jorgelina2292/" target="_blank" style="color: rgb(55, 24, 139);">Linkedin</a>
+                      </p>
+                      <p style="font-size: 13px">
+                        <a href="https://github.com/Georgia2292/" target="_blank" style="color: rgb(55, 24, 139);">GitHub</a>
+                      </p>
+                    </p>
+                    <a href="https://wa.link/6mk7o9" class="btn">Conversemos</a>
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h4>Envía ya</h4>
+          <p style="font-size: 13px">
+            En Envía Ya podrás encontrar información centralizada
+            completamente gratis las 24 horas del día y los 365 
+            días del año. 
+          </p>
+          <div class="footer__socials">
+            <span>
+              <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+            </span>
+            <span>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+            </span>
+            <span>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+            </span>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4 class="">Información</h4>
+          <a href="#inicio">Inicio</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#funcionalidades">Funcionalidades</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <div class="footer__col">
+          <h4>Recursos</h4>
+          <a href="#">Políticas</a>
+        </div>
+        <div class="footer__col">
+          <h4>Contacto</h4>
+          <a href="#">
+            <span><i class="ri-mail-line"></i></span> enviaya@gmail.com
+          </a>
+          <a href="#">
+            <span><i class="ri-phone-line"></i></span> 9876543210
+          </a>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 Envía ya - Todos los derechos reservados.
+      </div>
     </footer>
 
-    <script src="app.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
