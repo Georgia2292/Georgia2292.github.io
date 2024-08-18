@@ -258,7 +258,7 @@ body {
   position: relative;
   padding-bottom: 3rem;
   flex-grow: 1;
-  flex-basis: 200;
+  flex-basis: 200px;
 }
 
 .project__content {
