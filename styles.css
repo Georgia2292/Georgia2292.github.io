@@ -251,14 +251,14 @@ body {
 }
 
 .swiper-slide {
-  width: 600px;
+  width: 400px;
 }
 
 .project__card {
   position: relative;
   padding-bottom: 3rem;
   flex-grow: 1;
-  flex-basis: 200px;
+  flex-basis: 100%;
 }
 
 .project__content {
@@ -266,7 +266,10 @@ body {
   left: 50%;
   bottom: 1rem;
   transform: translateX(-50%);
-  width: calc(100% - 4rem);
+  width: 75vw);
+  max-width: 1000px
+  margin: auto
+  min-width: 320px
   padding: 1rem;
   display: flex;
   flex-wrap: wrap;
